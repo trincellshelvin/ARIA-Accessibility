@@ -8,19 +8,28 @@
 </head>
 
 <body>
-    <h1>Aria-Web Accessibility</h1>
-    <h2>What is ARIA?</h2>
-    <p>Basically, ARIA (Accessible Rich Internet Applications) is a set of roles and attributes that define ways
-        to make web content and web applications It works on many websites and applications, especially those developed
-        with JavaScript to make it more accessible to people with disabilities.</p>
-    <div id="percent-loaded" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div role="heading" aria-level="1">
+        <h1>Aria-Web Accessibility</h1>
     </div>
-<div>
-    <span>Username</span>
-    <input type="text" aria-label="Username">
-    <span>Password</span>
-    <input type="text" aria-label="Password"><button>Submit</button>
-</div>
+
+    <div role="heading" aria-level="2">
+        <h2>What is ARIA?</h2>
+    </div>
+
+    <div aria-label="paragraph">
+        <p>Basically, ARIA (Accessible Rich Internet Applications) is a set of roles and attributes that define ways
+            to make web content and web applications It works on many websites and applications, especially those
+            developed with JavaScript to make it more accessible to people with disabilities.</p>
+    </div>
+    <div style="padding-top: 2%;">
+        <span>Username</span>
+        <input type="text" aria-label="Username">
+        <label>Password</label>
+        <input type="text" aria-label="Password"><button aria-label="submitButton">Submit</button>
+    </div>
+    <div>
+        <span role="button"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role"
+                alt="ARIA button uses">Learn About Aria Buttons</a></span>
 </body>
 
 </html>
