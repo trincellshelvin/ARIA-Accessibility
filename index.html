@@ -8,14 +8,11 @@
 </head>
 
 <body>
-    <div role="heading" aria-level="1">
-        <h1>Aria-Web Accessibility</h1>
-    </div>
-
-    <div role="heading" aria-level="2">
-        <h2>What is ARIA?</h2>
-    </div>
-
+    <h1>Aria-Web Accessibility</h1>
+    <h2>What is ARIA?</h2>
+    <!-- ARIA Paragraph label used to allow readers to know that 
+    this is a paragraph per allowable elements list found
+    https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/structural_roles-->
     <div aria-label="paragraph">
         <p>Basically, ARIA (Accessible Rich Internet Applications) is a set of roles and attributes that define ways
             to make web content and web applications It works on many websites and applications, especially those
@@ -23,13 +20,19 @@
     </div>
     <div style="padding-top: 2%;">
         <span>Username</span>
+        <!--ARIA Labels for Username and Password allows a user with 
+        disabilities to utilize a reader that will notify them of the 
+        of the specific field that they are on. With a label for the submit 
+        button letting them know the role of said button.-->
         <input type="text" aria-label="Username">
         <label>Password</label>
         <input type="text" aria-label="Password"><button aria-label="submitButton">Submit</button>
     </div>
     <div>
+        <!--The role of the ARIA label with this button is to notify the user that why can go to
+        the linked site to learn about ARIA.-->
         <span role="button"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role"
-                alt="ARIA button uses">Learn About Aria Buttons</a></span>
+                aria-label="Learn About ARIA Button" alt="ARIA button uses">Learn About Aria Buttons</a></span>
 </body>
 
 </html>
